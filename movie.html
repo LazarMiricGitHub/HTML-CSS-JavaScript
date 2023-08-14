@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jim Carrey</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="column">
+                <div id="logo-i-social">
+                    <div id="logo-holder">
+                        <div></div>
+                    </div>
+                    <div id="social-holder">
+                        <a href="www.facebook.com">
+                            <img id="facebook">
+                        </a>
+                        <a href="www.twitter.com">
+                            <img id="twitter">
+                        </a>
+                        <a href="#">
+                            <img id="instagram">
+                        </a>
+                    </div>
+                </div>
+                <nav id="main-menu">
+                    <a href="index.html">About</a>
+                    <a href="awards.html">Awards</a>
+                    <a href="movie.html" class="active">Movie</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="page" id="movie-page">
+            <div class="column">
+                <h2 class="align-center">Movie</h2>
+
+                <div class="form align-center">
+                    <label for="i-movie">Movie:</label>
+                     <!--Datalist omogucava da kad kucamo u inputu
+                     da nam izadje sugestije koje sve opcije imamo-->
+                     <input type="text" name="movie-chooser" 
+                     id="i-movie" list="list-movie" required>
+                    <datalist id="list-movie">
+                        <option value="Dumb and Dumber">
+                        <option value="The Truman Show">
+                        <option value="A Christmas Carol">
+                        <option value="Man on the Moon">
+                        <option value="Me, MySelf & Irene">
+                        <option value="Liar Liar">
+                    </datalist><br>
+
+                    <label for="i-range">Rating:</label>
+                    <input type="range" name="range" id="i-range"
+                           min="10" max="100" step="10"><br><br>
+                    <button id="submit-btn" type="button">Submit</button>
+                    <div id="show"></div>
+                </div>
+                <p class="align-center" id="bold">Video of Jim Carrey</p>
+
+                <div class="audio-video align-center">
+                    <video src="audio-video/y2mate.is - Jim Carrey  - What It All Means _ One Of The Most Eye Opening Speeches-wTblbYqQQag-720p-1691762976.mp4" controls>
+                        <source type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="column">
+                <div class="footer-column align-left">
+                    HTML<br>
+                    CSS<br>
+                    JavaScript
+                </div>
+                <div class="footer-column align-center">
+                    &copy; 2023<br>
+                    Jim Carrey<br>
+                    www.JimCarrey.com
+                </div>
+                <div class="footer-column align-right">
+                    <a href="index.html">About</a><br>
+                    <a href="awards.html">Awards</a><br>
+                    <a href="movie.html">Movie</a>    
+                </div>
+            </div>
+        </div>
+
+    <script src="./js/actions.js"></script>    
+    </body>
+</html>
